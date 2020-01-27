@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  text-center >Giriş Ekranı</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid>
+
+<ion-row>
+
+<ion-col>
+
+<body class="text-center">
+
+<form class="form-signin">
+<img class="mb-4" src="../assets/icon/SMBLogo.ico" alt="" width="72" height="72">
+<h1 class="h3 mb-3 font-weight-normal">Giriş Yapınız</h1>
+
+<ion-label for="inputEmail" class="sr-only">Kullanıcı Adı</ion-label>
+<ion-input type="email" [(ngModel)]="username" name="username" class="form-control" text-left placeholder="Kullanıcı Adı"  required autofocus> </ion-input>
+
+<ion-label for="inputPassword" class="sr-only">Şifre</ion-label>
+<ion-input type="password" [(ngModel)]="password"  name="password"  class="form-control" text-left placeholder="Şifre" required  >  </ion-input>
+
+ <ion-item>
+            <ion-label>Beni Hatırla</ion-label>
+            <ion-checkbox  margin color="primary" checked slot="start"></ion-checkbox>
+</ion-item>
+
+
+
+
+<ion-button shape="round" (click)="onLogin()" fill="outline">Giriş Yap</ion-button>
+<p class="mt-5 mb-3 text-muted">SMB TECHNICS &copy; 2020</p>
+
+ </form>
+
+
+  </body>
+ 
+</ion-col>
+
+</ion-row>
+
+</ion-grid>
+
+
+
+</ion-content>
+

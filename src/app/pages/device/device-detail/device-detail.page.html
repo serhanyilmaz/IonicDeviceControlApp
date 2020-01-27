@@ -1,0 +1,157 @@
+<ion-header>
+ <ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-back-button defaultHref="device"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center margin >Cihaz Detay Sayfası</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid>
+
+
+<ion-row>
+
+<ion-col size-md="4">
+
+
+</ion-col>
+
+<ion-col size-md="4">
+
+    <ion-card >
+            <ion-card-header>
+              
+              <ion-card-title>Cihaz Adı: Cihaz 1</ion-card-title>
+            </ion-card-header>
+          
+      <ion-card-content  style="text-align: center ;color: black">
+
+      <ion-item text-center>
+          <ion-label  >Personel: Serhan Yılmaz</ion-label >
+      </ion-item>        
+
+       <ion-item text-center>
+          <ion-label  >Tezgah Adı: Tezgah 1</ion-label >
+      </ion-item> 
+
+      <ion-item text-center>
+          <ion-label floating  >Son Durum:OK</ion-label >
+      </ion-item>    
+
+       <ion-item text-center>
+          <ion-label  >Son Sıcaklık:36.5</ion-label >
+      </ion-item>  
+
+       <ion-item text-center>
+          <ion-label  >Son Alarm: -</ion-label >
+      </ion-item>  
+
+        
+            </ion-card-content>
+          </ion-card>
+
+</ion-col>
+
+
+<ion-col size-md="4">
+
+
+</ion-col>
+
+</ion-row>
+
+
+<ion-row>
+
+<ion-col text-center size-md="6">
+
+<ion-item > Alarm Geçmişi</ion-item>
+
+</ion-col>
+
+
+<ion-col text-center size-md="6">
+
+<ion-item > Sıcaklık Geçmişi</ion-item>
+
+</ion-col>
+
+
+</ion-row>
+
+
+<ion-row>
+
+<ion-col size-md="6">
+
+ <ion-row style="border: groove; ">
+      <ion-col  size-md="2">
+      <ion-label >Alarm Adı</ion-label>
+    </ion-col>
+    <ion-col size-md="4">
+      <ion-label >Alarm Tanımı</ion-label>
+    </ion-col>
+      <ion-col size-md="6">
+      <ion-label >Alarm Tarihi</ion-label>
+    </ion-col>
+    
+  </ion-row>
+
+  <ion-row  style="border: groove; " *ngFor="let number of [1,2,3,4,5,6,7,8,9]">
+      <ion-col  size-md="2">
+      <ion-label >Aşırı Akım</ion-label>
+    </ion-col>
+    <ion-col size-md="4">
+      <ion-label >Fazla sürtünmeden kaynaklı oluşan bir hatadır</ion-label>
+    </ion-col>
+      <ion-col size-md="6">
+      <ion-label >21.01.2020 15:00:45</ion-label>
+    </ion-col>
+  </ion-row>
+
+</ion-col>
+
+
+
+<ion-col size-md="6">
+
+
+ <ion-row style="border: groove; ">
+      <ion-col  size-md="2">
+      <ion-label >ID</ion-label>
+    </ion-col>
+    <ion-col size-md="4">
+      <ion-label >Cihaz Sıcaklığı</ion-label>
+    </ion-col>
+      <ion-col size-md="6">
+      <ion-label >Tarih</ion-label>
+    </ion-col>
+    
+  </ion-row>
+
+
+  <ion-row  style="border: groove; " *ngFor="let no of [1,2,3,4,5]">
+      <ion-col  size-md="2">
+      <ion-label >{{no}}</ion-label>
+    </ion-col>
+    <ion-col size-md="4">
+      <ion-label >40 C</ion-label>
+    </ion-col>
+      <ion-col size-md="6">
+      <ion-label >21.01.2020 15:00:45</ion-label>
+    </ion-col>
+  </ion-row>
+</ion-col>
+
+</ion-row>
+
+ 
+
+
+
+</ion-grid>
+     
+</ion-content>
